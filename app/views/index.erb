@@ -1,0 +1,26 @@
+<h1>Deaf Aunty</h1>
+
+<p>Say something to Aunty</p>
+
+<form action="/aunty" method="post">
+  <input type="text" name="user_input">
+  <input type="submit" value="Say It!">
+</form>
+
+<p>URL parameters:</p>
+<%= params %>
+
+<p> Form to Get cool url </p>
+<form action="/cool_url" method="get">
+  <input type="text" name="user_input">
+  <input type="submit" value="Hit it!">
+</form>
+
+<p> Form to Post cool url </p>
+<form action="/cool_url" method="post">
+  <input type="text" name="user_input"><br>
+  <input type="text" name="post[title]"><br>
+  <input type="text" name="post[price]"><br>
+  <textarea name="post[description]"></textarea><br>
+  <input type="submit" value="Punch it!">
+</form>
